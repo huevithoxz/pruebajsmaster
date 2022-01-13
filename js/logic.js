@@ -83,12 +83,13 @@ function play(userOption) {
     } 
    
     updateDisplay(++rounds);
-    if(rounds === 10 )
-    {
-      alert("se acabo el juego ")
-      resetCounter() 
-    }
+  
   }, 1000);
+  if(rounds === 10 )
+  {
+    alert("se acabo el juego ")
+    resetCounter() 
+  }
 }
 function calcResult(userOption, machineOption) {
   if (userOption === machineOption) {
